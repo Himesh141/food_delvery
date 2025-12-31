@@ -1,14 +1,12 @@
-
-import './App.css'
+import React from "react";
+import Register from "./components/Register";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
-        <h2>app.jsx</h2>
+      <Register />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
