@@ -1,5 +1,6 @@
+
 .card-out {
-  margin-left:700px;
+  margin-left:1100px;
 }
 
 .card {
@@ -20,9 +21,8 @@
   background-image: url('/src/assets/images/log.jpeg');
   background-size: cover;
   background-position: center;
-  width: 100vw;
- 
-  min-height: 100vh;
+  width: 98.8vw;
+  min-height: 90.4vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,12 +46,7 @@
 
 
 @media (max-width: 576px) {
-  html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
+  
 
   .login-container {
     width: 100vw;
@@ -79,8 +74,9 @@
   }
 
   .card-out {
-    margin-right: 0;
-  }
+  margin-left:0px;
+}
+
 
   h3 {
     font-size: 1.4rem;
