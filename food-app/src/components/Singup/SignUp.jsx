@@ -1,18 +1,14 @@
-import React, { Component } from 'react'
-import './signup.css'
-import { Link } from 'react-router-dom'
+import React, { Component } from "react";
+import "./signup.css";
+
 export default class SignUp extends Component {
   render() {
     return (
-      <>
-      
-       <div className="register-container">
-        <div className="card-out">
-        <div className="card  ">
-
+      <div className="register-container">
+        <div className="signup-card">
           <h3 className="text-center brand mt-2 mb-1">🍕 FoodApp</h3>
           <h5 className="text-center mb-1">Create Account</h5>
-          <p className="text-center text-muted mb-2">
+          <p className="text-center text-muted mb-3">
             Order your favorite food fast
           </p>
 
@@ -22,7 +18,7 @@ export default class SignUp extends Component {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Enter User name"
+                placeholder="Enter user name"
                 required
               />
             </div>
@@ -55,25 +51,23 @@ export default class SignUp extends Component {
                 required
               />
             </div>
-            <div className="mb-2">
+
+            <div className="mb-3">
               <label className="form-label">Role</label>
-                <select className="form-select mb-3" name="role">
-                  <option value="">Select your role</option>
-                  <option value="admin">Admin</option>
-                  <option value="customer">Customer</option>
-                  <option value="delivery">Restuarent</option>
-                </select>
+              <select className="form-select">
+                <option value="">Select your role</option>
+                <option value="admin">Admin</option>
+                <option value="customer">Customer</option>
+                <option value="delivery">Restaurant</option>
+              </select>
             </div>
 
-            <button type="submit" className="btn btn-primary w-100 mb-3">
+            <button type="submit" className="btn btn-primary w-100">
               Sign Up
             </button>
           </form>
-
         </div>
       </div>
-    </div> 
-      </>
-    )
+    );
   }
 }

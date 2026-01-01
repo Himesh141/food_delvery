@@ -1,39 +1,39 @@
-.card-out {
-  margin-right: 1300px;
-}
 
-.card {
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.9);
-  width: 400px;
-  height: auto;
-  padding: 20px;
-  margin: 5px;
+* {
   box-sizing: border-box;
-  
 }
 
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
 
 .register-container {
-  background-image: url('/src/assets/images/bgsign.jpeg');
-  background-size: cover;
-  background-position: center;
-  width: 99vw;
   min-height: 100vh;
+  width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 0;
-}
 
-.btn-primary {
-  background-color: #ff5722;
-  border: none;
+  background-image: url("/src/assets/images/bgsign.jpeg");
+  background-size: cover;
+  background-position: center;
 }
-.btn-primary:hover {
-  background-color: #e64a19;
-}
+.signup-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+  margin-right: 800px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
 
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
 
 .brand {
   color: #ff5722;
@@ -41,40 +41,26 @@
 }
 
 
+.btn-primary {
+  background-color: #ff5722;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e64a19;
+}
 
 @media (max-width: 576px) {
-  html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
   .register-container {
-    width: 100vw;
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    
-    background: #fff;
-    display: flex;
+    background: #ffffff;
     align-items: stretch;
-    justify-content: center;
   }
 
-  .card {
-    width: 100vw;
-    height: 100%;
+  .signup-card {
+    max-width: 100%;
     min-height: 100vh;
-    margin: 0;
-    padding: 20px;
     border-radius: 0;
-    background: #fff;
     box-shadow: none;
-      border: 0;
-  }
-
-  .card-out {
     margin-right: 0;
   }
 
