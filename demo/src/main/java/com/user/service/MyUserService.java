@@ -15,7 +15,7 @@ public class MyUserService implements UserDetailsService{
             private UserRepo userRepo;
             
             public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        		UserEntity details=userRepo.FindByUsername(username);
+        		UserEntity details=userRepo.findByUsername(username);
         		
         		if(details==null)
         		{

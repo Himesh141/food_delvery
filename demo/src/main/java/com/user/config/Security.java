@@ -34,7 +34,7 @@ public class Security {
 		
 		
 		http.authorizeHttpRequests(req->req
-				.requestMatchers("/login/*","/error","/getimage/*")
+				.requestMatchers("/auth/signup","/login/*","/error","/getimage/*")
 				.permitAll()
 				.anyRequest()
 				.authenticated());

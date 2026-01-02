@@ -9,17 +9,28 @@ import jakarta.persistence.Id;
 public class UserEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	private String username;
+	private int phnno;
 	private String mail;
 	private String role;
 	private String password;
-	public UserEntity(int id, String username, String mail, String password,String role) {
+	public UserEntity() {
+        // JPA requirement
+    }
+	public UserEntity(Integer id,int phnno, String username, String mail, String password,String role) {
 		this.id = id;
+		this.phnno=phnno;
 		this.username = username;
 		this.mail = mail;
 		this.password = password;
 		this.role=role;
+	}
+	public int getPhnno() {
+		return phnno;
+	}
+	public void setPhnno(int phnno) {
+		this.phnno = phnno;
 	}
 	public String getRole() {
 		return role;
