@@ -21,8 +21,8 @@
   background-image: url('/src/assets/images/log.jpeg');
   background-size: cover;
   background-position: center;
-  width: 98.8vw;
-  min-height: 90.4vh;
+  width: 100vw;
+  min-height: 92.3vh;
   display: flex;
   align-items: center;
   justify-content: center;
